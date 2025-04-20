@@ -1,19 +1,18 @@
 package com.voting.votingapp.model;
 
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.Entity;
 
 @Embeddable
 public class OptionVote {
-    private String voteOption;
+    private String optionText;
     private Integer voteCount = 0;
 
-    public String getVoteOption() {
-        return voteOption;
+    public String getOptionText() {
+        return optionText;
     }
 
-    public void setVoteOption(String voteOption) {
-        this.voteOption = voteOption;
+    public void setOptionText(String voteOption) {
+        this.optionText = voteOption;
     }
 
     public Integer getVoteCount() {
